@@ -7,6 +7,10 @@ const conn = new Sequelize(
   {
     logging: (...msg) => console.log(msg),
     // logging: false,
+    ssl: true,
+    dialectOptions:{
+      ssl:true,
+    }
   }
 );
 
