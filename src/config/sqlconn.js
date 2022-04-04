@@ -10,6 +10,7 @@ const conn = new Sequelize(
     ssl: true,
     dialectOptions:{
       ssl:true,
+      rejectUnauthorized: false
     }
   }
 );
