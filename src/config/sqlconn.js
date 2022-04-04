@@ -7,7 +7,7 @@ const conn = new Sequelize(
   {
     logging: (...msg) => console.log(msg),
     // logging: false,
-    ssl: true,
+    ssl: {rejectUnauthorized: false},
     dialectOptions:{
       ssl:true,
       rejectUnauthorized: false
